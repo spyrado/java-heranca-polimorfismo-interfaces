@@ -17,20 +17,4 @@ public class Funcionario {
     salario += salario * (percentual / 100);
     System.out.printf("Novo salario de %s é %.2f \n", nome, salario);
   }
-
-  public String getCargo() {
-    return cargo;
-  }
-
-  public void setCargo(String cargo) {
-    this.cargo = cargo;
-  }
-
-  public String getNome() {
-    return nome;
-  }
-
-  public double getSalario() {
-    return salario;
-  }
 }
