@@ -11,16 +11,18 @@ public abstract class Funcionario {
   }
 
   public void exibirInformacoes() {
-    System.out.printf("Funcionario: %s - Salário %.2f \n", nome, salario);
+    System.out.printf("\nFuncionario: %s - Salário %.2f", nome, salario);
   }
 
   public void reajustarSalario(double percentual) {
     salario += salario * (percentual / 100);
-    System.out.printf("Novo salario de %s é %.2f \n", nome, salario);
+    System.out.printf("\nNovo salario de %s é %.2f", nome, salario);
   }
 
   public void reajustarSalario() {
     salario += 500;
-    System.out.printf("Salário com dissídio de %s é %.2f \n", nome, salario);
+    System.out.printf("\nSalário com dissídio de %s é %.2f", nome, salario);
   }
+
+  public abstract void calcularPLR();
 }

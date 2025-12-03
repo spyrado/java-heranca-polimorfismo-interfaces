@@ -8,9 +8,11 @@ public class Main {
     gerente.exibirInformacoes();
     gerente.reajustarSalario(2);
     ((Gerente) gerente).setBonus(1000);
+    gerente.calcularPLR();
 
     Funcionario desenvolvedor = new Desenvolvedor("Carla", 12000, "Backend Java");
     desenvolvedor.reajustarSalario();
     desenvolvedor.exibirInformacoes();
+    desenvolvedor.calcularPLR();
   }
 }
