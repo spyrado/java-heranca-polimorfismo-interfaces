@@ -1,13 +1,16 @@
+import model.Desenvolvedor;
+import model.Funcionario;
+import model.Gerente;
+
 public class Main {
   public static void main(String[] args) {
-      Funcionario funcionario1 = new Funcionario("Ana", 9000);
-      Funcionario funcionario2 = new Funcionario("Fulano", 8500);
+    Gerente gerente = new Gerente("Mario", 15000);
+    gerente.exibirInformacoes();
+    gerente.reajustarSalario(2);
+    gerente.setBonus(1000);
 
-      funcionario1.exibirInformacoes();
-      funcionario1.reajustarSalario(10);
-
-      funcionario2.exibirInformacoes();
-      funcionario2.reajustarSalario(5);
+    Desenvolvedor desenvolvedor = new Desenvolvedor("Carla", 12000, "Backend Java");
+    desenvolvedor.exibirInformacoes();
 
   }
 }

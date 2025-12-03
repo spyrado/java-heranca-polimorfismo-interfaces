@@ -1,7 +1,8 @@
+package model;
+
 public class Funcionario {
 
   private String nome;
-  private String cargo;
   private double salario;
 
   public Funcionario(String nome, double salario) {
@@ -10,7 +11,7 @@ public class Funcionario {
   }
 
   public void exibirInformacoes() {
-    System.out.printf("Funcionario: %s - Cargo: %s - Salário %.2f \n", nome, cargo, salario);
+    System.out.printf("Funcionario: %s - Salário %.2f \n", nome, salario);
   }
 
   public void reajustarSalario(double percentual) {
