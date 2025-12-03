@@ -9,6 +9,7 @@ public class Main {
     gerente.reajustarSalario(2);
     ((Gerente) gerente).setBonus(1000);
     gerente.calcularPLR();
+    ((Gerente) gerente).aprovarProjeto("uso de IA nos códigos Java");
 
     Funcionario desenvolvedor = new Desenvolvedor("Carla", 12000, "Backend Java");
     desenvolvedor.reajustarSalario();

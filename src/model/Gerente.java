@@ -1,6 +1,8 @@
 package model;
 
-public class Gerente extends Funcionario {
+import interfaces.Aprovador;
+
+public class Gerente extends Funcionario implements Aprovador {
 
   private double bonus;
 
@@ -24,5 +26,10 @@ public class Gerente extends Funcionario {
   @Override
   public void calcularPLR() {
     System.out.println("\nPLR do Gerente");
+  }
+
+  @Override
+  public void aprovarProjeto(String nomeProjeto) {
+    System.out.printf("Gerente: %s - aprovou o projeto: %s\n", nome, nomeProjeto);
   }
 }
