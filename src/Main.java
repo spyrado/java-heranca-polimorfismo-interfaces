@@ -10,6 +10,7 @@ public class Main {
     ((Gerente) gerente).setBonus(1000);
 
     Funcionario desenvolvedor = new Desenvolvedor("Carla", 12000, "Backend Java");
+    desenvolvedor.reajustarSalario();
     desenvolvedor.exibirInformacoes();
 
   }
