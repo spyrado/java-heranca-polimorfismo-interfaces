@@ -12,6 +12,5 @@ public class Main {
     Funcionario desenvolvedor = new Desenvolvedor("Carla", 12000, "Backend Java");
     desenvolvedor.reajustarSalario();
     desenvolvedor.exibirInformacoes();
-
   }
 }
